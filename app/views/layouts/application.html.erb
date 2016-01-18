@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tinyurl</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <h2>Welcome to Tiny URL</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row bdy">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; @ Rajesh Rajan</p>
+    </footer>
+
+
+  </body>
+</html>

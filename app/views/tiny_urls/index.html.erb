@@ -1,0 +1,7 @@
+<div class="tiny">
+<%= form_tag('/tiny_urls') do -%>
+  <p>Please enter your url here</p>
+  <div><%= text_field_tag 'url', nil, :class => "form-control"%></div>
+  <div class="center"><%= submit_tag 'Submit', :class=>"btn btn-primary" %></div>
+<% end -%>
+</div>  
